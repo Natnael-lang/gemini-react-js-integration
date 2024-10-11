@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai"; // Import GoogleGenerativeAI
 import "../CSS/Gpt.css";
 
-const API_KEY ="AIzaSyC06yTVxLN58CL2_7-IfzV8vOEojxehIlU"; // Use environment variable for API key
+const API_KEY =process.env.REACT_APP_GOOGLE_API_KEY; // Use environment variable for API key
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 const ChatGpt = () => {
