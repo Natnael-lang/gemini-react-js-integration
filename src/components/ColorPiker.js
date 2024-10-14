@@ -3,7 +3,7 @@ import { SketchPicker } from 'react-color';
 import { colorContext } from './colorContext';
 
 const MovableColorPicker = ({isPopUp ,onClose}) => {
-    const [color, setColor] = useState("#000000");
+    const [color, setColor] = useState("#ffffff");
     const [isDragging, setIsDragging] = useState(false);
     const offset = useRef({ x: 0, y: 0 }); // Using useRef for offset
     const [position, setPosition] = useState({ top: "100px", left: "100px" }); // Using state for position

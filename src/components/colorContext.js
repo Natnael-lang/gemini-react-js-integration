@@ -4,7 +4,7 @@ import ChatGpt from "./chatGpt";
 import ColorPiker from "./ColorPiker"
 export const colorContext=createContext("");
  export const Color1Context =()=>{
-            const [color1,setColor]=useState("#000000")
+            const [color1,setColor]=useState("")
 
 const handleColor=(color)=>{
     setColor(color)
